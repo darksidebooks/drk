@@ -89,3 +89,28 @@ function gameLoop() {
 // Start game
 generateFood();
 gameLoop();
+
+// Detect collisions function
+function detectCollisions() {
+  if (
+    snake[0].x < 0 ||
+    snake[0].x > canvas.width - 10 ||
+    snake[0].y < 0 ||
+    snake[0].y > canvas.height - 10
+  ) {
+    // Game over
+    gameOver();
+  }
+
+  if (snake[0].x === food.x && snake[0].y === food.y) {
+    // Snake ate food
+    score++;
+    generateFood();
+  }
+}
+
+// Game over function
+function gameOver() {
+  alert("Game over!");
+  location.reload();
+}
