@@ -17,8 +17,13 @@ let score = 0;
 function drawSnake() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   snake.forEach((segment) => {
-    ctx.fillStyle = "green";
+    // Draw border
+    ctx.fillStyle = "black";
     ctx.fillRect(segment.x, segment.y, 10, 10);
+
+    // Draw snake segment
+    ctx.fillStyle = "green";
+    ctx.fillRect(segment.x + 1, segment.y + 1, 8, 8);
   });
 }
 
