@@ -44,13 +44,14 @@ function generateFood() {
 
 // Detect collisions function
 function detectCollisions() {
-  if (
-    snake[0].x < 0 ||
-    snake[0].x > canvas.width - 10 ||
-    snake[0].y < 0 ||
-    snake[0].y > canvas.height - 10
-  ) {
-    // Game over
+  if (snake[0].x < 0) {
+    snake[0].x = canvas.width - 10;
+  } else if (snake[0].x > canvas.width - 10) {
+    snake[0].x = 0;
+  } else if (snake[0].y < 0) {
+    snake[0].y = canvas.height - 10;
+  } else if (snake[0].y > canvas.height - 10) {
+    snake[0].y = 0;
   }
 
   if (snake[0].x === food.x && snake[0].y === food.y) {
