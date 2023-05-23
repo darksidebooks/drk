@@ -5,16 +5,16 @@ import matplotlib.pyplot as plt
 df = pd.read_excel('PlanilhaPadrao_B2BX_ESTOQUE.xls', header=0)
 
 # Agrupando as quantidades pelo campo selo
-grouped = df.groupby('SELO')['Estoque'].sum()
+grouped = df.groupby('CURVA')['Estoque'].sum()
 
 # Criando o gráfico de colunas
 ax = grouped.plot(kind='bar', color='red')
 
 # Adicionando um título ao gráfico
-ax.set_title('Estoque por Selo')
+ax.set_title('Estoque por Curva')
 
 # Adicionando rótulos aos eixos x e y
-ax.set_xlabel('Selo')
+ax.set_xlabel('Curva')
 ax.set_ylabel('Estoque')
 
 # Exibindo os rótulos do selo na horizontal
