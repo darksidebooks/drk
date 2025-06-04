@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mansão DarkSide</title>
+    <script src="https://cdn.jsdelivr.net/gh/tmedwards/twinejs@2.3.14/storyformats/harlowe-3.2.2/harlowe.min.js"></script>
+    <script>
+        window.storyData = {
+            "passages": [],
+            "name": "Mansão DarkSide",
+            "startnode": 1,
+            "creator": "Twine",
+            "creator-version": "2.10.0",
+            "ifid": "12345678-90ab-cdef-1234-567890abcdef"
+        };
+    </script>
+</head>
+<body>
+    <tw-storydata name="Mansão DarkSide" startnode="1" creator="Twine" creator-version="2.10.0" ifid="12345678-90ab-cdef-1234-567890abcdef" format="Harlowe" options="" hidden>
+        <style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style>
+        <script role="script" id="twine-user-script" type="text/twine-javascript"></script>
+        <tw-passagedata pid="1" name="Start">É uma noite chuvosa. Você caminha pela estrada até avistar uma mansão abandonada, envolta por árvores retorcidas e sombras vermelhas.
+
+[[Entrar na casa mal-assombrada->Entrada]]</tw-passagedata>
+        <tw-passagedata pid="2" name="Entrada">Você empurra a porta que range alto. O saguão está coberto de poeira. Três portas chamam sua atenção.
+
+[[Abrir a porta da esquerda->Biblioteca]]
+[[Abrir a porta da direita->Cozinha]]
+[[Subir as escadas rangentes->QuartoEscuro]]</tw-passagedata>
+        <tw-passagedata pid="3" name="Biblioteca">As estantes estão cheias de livros antigos. Um deles brilha com uma luz vermelha estranha...
+
+[[Puxar o livro brilhante->ArmadilhaLivro]]
+[[Ignorar e continuar explorando->CorredorSombrio]]</tw-passagedata>
+        <tw-passagedata pid="4" name="ArmadilhaLivro">Assim que você toca o livro, o chão se abre! Você cai em um alçapão e retorna ao início...
+
+[[Recomeçar->Start]]</tw-passagedata>
+        <tw-passagedata pid="5" name="CorredorSombrio">Um quadro cai da parede revelando um compartimento secreto. Dentro, há um papel com letras em vermelho-sangue:
+
+**VOCÊ GANHOU UM CUPOM DARKSIDE! Use o código: CAVEIRA15 na loja.**
+
+[[Continuar andando pelo corredor->SalaSombras]]</tw-passagedata>
+        <tw-passagedata pid="6" name="SalaSombras">A sala é iluminada apenas por velas derretidas. Você sente que está sendo observado.
+
+[[Voltar para o saguão->Entrada]]
+[[Entrar na porta entreaberta ao fundo->Adega]]</tw-passagedata>
+        <tw-passagedata pid="7" name="Cozinha">A cozinha fede a carne podre. Uma faca flutua no ar e voa em sua direção!
+
+[[Tentar se esquivar->EsquivaFalada]]
+[[Correr de volta->Entrada]]</tw-passagedata>
+        <tw-passagedata pid="8" name="EsquivaFalada">Você tenta se esquivar, mas tropeça em ossos espalhados no chão. A faca acerta seu ombro.
+
+[[Você acorda no saguão novamente->Entrada]]</tw-passagedata>
+        <tw-passagedata pid="9" name="QuartoEscuro">O quarto está completamente escuro. Você acende um fósforo e vê uma figura atrás de você.
+
+[[Gritar->Recomeco]]
+[[Virar devagar->Espelho]]</tw-passagedata>
+        <tw-passagedata pid="10" name="Espelho">Você vê apenas seu reflexo... até ele sorrir de volta sozinho.
+
+[[Tocar o espelho->ArmadilhaEspelho]]
+[[Fugir do quarto->Entrada]]</tw-passagedata>
+        <tw-passagedata pid="11" name="ArmadilhaEspelho">Você é sugado para dentro do espelho e acorda do lado de fora da casa.
+
+[[Recomeçar->Start]]</tw-passagedata>
+        <tw-passagedata pid="12" name="Adega">Você desce as escadas da adega. Está escuro e há uma caixa com um símbolo da Caveira DarkSide.
+
+[[Abrir a caixa->CupomFinal]]</tw-passagedata>
+        <tw-passagedata pid="13" name="CupomFinal">Você encontra mais um cupom! **CAVEIRA20 – 20% OFF na loja por tempo limitado!**
+
+[[Sair da mansão com o cupom em mãos->Fim]]</tw-passagedata>
+        <tw-passagedata pid="14" name="Recomeco">Você grita, mas ninguém ouve. A figura sorri e tudo escurece.
+
+[[Acordar novamente no início->Start]]</tw-passagedata>
+        <tw-passagedata pid="15" name="Fim">Você sobreviveu à mansão... por enquanto.
+
+Acesse [https://www.darksidebooks.com.br](https://www.darksidebooks.com.br) e aproveite seus cupons.</tw-passagedata>
+    </tw-storydata>
+    <tw-story></tw-story>
+</body>
+</html>
